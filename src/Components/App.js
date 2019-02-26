@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from '../logo.svg';
 import './App.css';
+import Lession3 from './Lession3';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <div className="App">
@@ -20,6 +25,10 @@ class App extends Component {
             Learn React
           </a>
         </header>
+        <div>
+          <h1>Lession 3</h1>
+          <Lession3 hasvacancy={true} />
+        </div>
       </div>
     );
   }
